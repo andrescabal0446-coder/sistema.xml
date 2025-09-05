@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_edittext"
+        >
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Empleado"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/tvSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete la información del nuevo empleado"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Campo Nombres -->
+        <EditText
+            android:id="@+id/etNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres *"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Campo Apellidos -->
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos *"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Campo Cédula -->
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula *"
+            android:inputType="number"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Fecha de Nacimiento -->
+        <EditText
+            android:id="@+id/etFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento (dd/mm/aaaa) *"
+            android:inputType="date"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Cargo -->
+        <Spinner
+            android:id="@+id/spCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Salario Mensual -->
+        <EditText
+            android:id="@+id/etSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salario Mensual (COP) *"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Caja de información -->
+
+        <!-- Botón Guardar -->
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#E3F2FD"
+            android:padding="10dp"
+            android:text="Información importante:\n• Todos los campos marcados con (*) son obligatorios\n• La cédula debe ser única en el sistema\n• El empleado debe ser mayor de 18 años\n• El salario mínimo permitido es $100,000 COP"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Empleado"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema de Nómina Sisnom - Gestión de Empleados"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+</LinearLayout>
